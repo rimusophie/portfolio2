@@ -1,9 +1,23 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import Portfolio2Header from './components/Portfolio2Header.vue'
+import Portfolio2Footer from './components/Portfolio2Footer.vue'
 </script>
 
 <template>
+  <header>
+    <Portfolio2Header />
+  </header>
+  
+  <main>
+    <RouterView />
+  </main>
+
+  <footer>
+    <Portfolio2Footer />
+  </footer>
+
+  <!--
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
@@ -18,9 +32,11 @@ import HelloWorld from './components/HelloWorld.vue'
   </header>
 
   <RouterView />
+-->
 </template>
 
 <style scoped>
+/*
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -82,4 +98,5 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+*/
 </style>
