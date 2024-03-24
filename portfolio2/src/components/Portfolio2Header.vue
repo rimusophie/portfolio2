@@ -2,28 +2,23 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="container bg-primary">
         <div class="row">
             <div class="col">
-                <button class="btn btn-primary">スキル</button>
+                <button class="btn btn-primary header-button">スキル</button>
             </div>
             <div class="col">
-                <button class="btn btn-primary">職務経歴</button>
+                <button class="btn btn-primary header-button">職務経歴</button>
             </div>
             <div class="col">
-                <button class="btn btn-primary">ポートフォリオ</button>
+                <button class="btn btn-primary header-button">ポートフォリオ</button>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-.header-layout {
+.header-button {
     width: 100%;
-    height: 100px;
-    margin-bottom: 40px;
-    position: fixed;
-    top: 0;
-    z-index: 2147483647;
 }
 </style>
