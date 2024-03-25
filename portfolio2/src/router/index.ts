@@ -7,9 +7,14 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'JobCareerList',
+      name: 'root',
       component: JobCareerListViewVue
     },
+    {
+      path: '/JobCareerList',
+      name: 'JobCareerList',
+      component: JobCareerListViewVue
+    }
     /*
     {
       path: '/about',
