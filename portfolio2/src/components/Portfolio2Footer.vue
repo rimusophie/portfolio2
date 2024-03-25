@@ -2,8 +2,8 @@
 </script>
 
 <template>
-    <div class="footer-layout">
-        Footer
+    <div class="container bg-primary mt-3">
+        <div class="row"></div>
     </div>
 </template>
 
