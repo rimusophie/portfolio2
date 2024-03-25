@@ -6,10 +6,10 @@ import { RouterLink } from 'vue-router';
     <div class="container bg-info mb-3">
         <div class="row">
             <div class="col">
-                <button class="btn btn-info header-button">スキル</button>
+                <RouterLink v-bind:to="{name: 'SkillList'}" class="link-text"><button class="btn btn-info header-button">スキル</button></RouterLink>
             </div>
             <div class="col">
-                <button class="btn btn-info header-button"><RouterLink v-bind:to="{name: 'JobCareerList'}" class="link-text">職務経歴</RouterLink></button>
+                <RouterLink v-bind:to="{name: 'JobCareerList'}" class="link-text"><button class="btn btn-info header-button">職務経歴</button></RouterLink>
             </div>
             <div class="col">
                 <button class="btn btn-info header-button">ポートフォリオ</button>
