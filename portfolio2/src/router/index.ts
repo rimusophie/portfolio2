@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import JobCareerListViewVue from '@/views/JobCareerListView.vue'
-import SkillListViewVue from '@/views/SkillListView.vue'
+//import HomeView from '../views/HomeView.vue'
+//import JobCareerListViewVue from '@/views/JobCareerListView.vue'
+//import SkillListViewVue from '@/views/SkillListView.vue'
+//import PortfolioListViewVue from '@/views/PortfolioListView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,17 +10,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'root',
-      component: JobCareerListViewVue
+      component: () => import('@/views/JobCareerListView.vue')
     },
     {
       path: '/JobCareerList',
       name: 'JobCareerList',
-      component: JobCareerListViewVue
+      component: () => import('@/views/JobCareerListView.vue')
     },
     {
       path: '/SkillList',
       name: 'SkillList',
-      component: SkillListViewVue
+      component: () => import('@/views/SkillListView.vue')
+    },
+    {
+      path: '/PortfolioList',
+      name: 'PortfolioList',
+      component: () => import('@/views/PortfolioListView.vue')
     }
     /*
     {

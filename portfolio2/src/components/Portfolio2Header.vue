@@ -12,7 +12,7 @@ import { RouterLink } from 'vue-router';
                 <RouterLink v-bind:to="{name: 'JobCareerList'}" class="link-text"><button class="btn btn-info header-button">職務経歴</button></RouterLink>
             </div>
             <div class="col">
-                <button class="btn btn-info header-button">ポートフォリオ</button>
+                <RouterLink v-bind:to="{name: 'PortfolioList'}" class="link-text"><button class="btn btn-info header-button">ポートフォリオ</button></RouterLink>
             </div>
         </div>
     </div>
