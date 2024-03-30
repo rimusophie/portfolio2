@@ -24,6 +24,11 @@
             <div class="col">期間</div>
             <div class="col">4年3ヶ月</div>
         </div>
+
+        <div class="row p-2">
+            <div class="col"><button>更新</button></div>
+            <div class="col"><button>削除</button></div>
+        </div>
     </div>
     
 </template>

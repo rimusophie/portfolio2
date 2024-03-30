@@ -28,6 +28,12 @@ const router = createRouter({
       component: () => import('@/views/SkillDetailView.vue')
     },
     {
+      // スキル追加画面
+      path: '/SkillAdd',
+      name: 'SkillAdd',
+      component: () => import('@/views/SkillAddView.vue')
+    },
+    {
       // ポートフォリオ一覧画面
       path: '/PortfolioList',
       name: 'PortfolioList',
