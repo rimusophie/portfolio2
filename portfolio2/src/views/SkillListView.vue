@@ -7,6 +7,13 @@ import { RouterLink } from 'vue-router';
         <div class="row bg-info text-white p-2 mb-2">
             スキル一覧
         </div>
+
+        <div class="row p-2 mb-2">
+            <div class="col">
+                <RouterLink v-bind:to="{name: 'SkillAdd'}">新規登録はこちらから</RouterLink>
+            </div>
+        </div>
+
         <div class="row">
             <table class="table table-bordered table-hover table-sm">
                 <thead>
