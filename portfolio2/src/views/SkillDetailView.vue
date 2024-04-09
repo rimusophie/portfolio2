@@ -1,16 +1,15 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
+import { RouterLink } from 'vue-router';
 
 const router = useRouter();
 
 const onEdit = (): void => {
-    alert("onEdit");
     // 編集画面へ
     router.push({name: "SkillEdit"});
 };
 const onDelete = (): void => {
     // 成功したら一覧画面へ
-    alert("onDelete");
     router.push({name: "SkillList"});
 };
 </script>
@@ -42,6 +41,10 @@ const onDelete = (): void => {
         <div class="row p-2">
             <div class="col"><button class="btn btn-secondary" v-on:click="onEdit">変更</button></div>
             <div class="col"><button class="btn btn-secondary" v-on:click="onDelete">削除</button></div>
+        </div>
+
+        <div class="row p-2">
+            <div class="col"><RouterLink v-bind:to="{name: 'SkillList'}">一覧へ戻る</RouterLink></div>
         </div>
     </div>
     
