@@ -9,6 +9,9 @@ const onEdit = (): void => {
     router.push({name: "JobCareerEdit"});
 };
 const onDelete = (): void => {
+    if(!confirm("削除します。よろしいでしょうか？")) {
+        return;
+    }
     // 成功したら一覧画面へ
     router.push({name: "JobCareerList"});
 };

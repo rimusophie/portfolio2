@@ -6,39 +6,39 @@ const router = useRouter();
 
 const onEdit = (): void => {
     // 編集画面へ
-    router.push({name: "SkillEdit"});
+    router.push({name: "PortfolioEdit"});
 };
 const onDelete = (): void => {
     if(!confirm("削除します。よろしいでしょうか？")) {
         return;
     }
     // 成功したら一覧画面へ
-    router.push({name: "SkillList"});
+    router.push({name: "PortfolioList"});
 };
 </script>
 
 <template>
     <div class="container">
         <div class="row bg-info text-white p-2 mb-2">
-            スキル詳細
+            ポートフォリオ詳細
         </div>
 
         <!-- 名称 -->
         <div class="row p-2">
             <div class="col">名称</div>
-            <div class="col">Java</div>
+            <div class="col">ポートフォリオ一覧</div>
         </div>
 
-        <!-- 種別 -->
+        <!-- 使用スキル -->
         <div class="row p-2">
-            <div class="col">種別</div>
-            <div class="col">PG</div>
+            <div class="col">使用スキル</div>
+            <div class="col">Vue、Python</div>
         </div>
 
-        <!-- 期間 -->
+        <!-- 備考 -->
         <div class="row p-2">
-            <div class="col">期間</div>
-            <div class="col">4年3ヶ月</div>
+            <div class="col">備考</div>
+            <div class="col">このサイトのこと</div>
         </div>
 
         <div class="row p-2">
@@ -47,7 +47,7 @@ const onDelete = (): void => {
         </div>
 
         <div class="row p-2">
-            <div class="col"><RouterLink v-bind:to="{name: 'SkillList'}">一覧へ戻る</RouterLink></div>
+            <div class="col"><RouterLink v-bind:to="{name: 'PortfolioList'}">一覧へ戻る</RouterLink></div>
         </div>
     </div>
     

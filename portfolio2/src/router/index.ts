@@ -62,6 +62,24 @@ const router = createRouter({
       path: '/PortfolioList',
       name: 'PortfolioList',
       component: () => import('@/views/PortfolioListView.vue')
+    },
+    {
+      // ポートフォリオ詳細画面
+      path: '/PortfolioDetail',
+      name: 'PortfolioDetail',
+      component: () => import('@/views/PortfolioDetailView.vue')
+    },
+    {
+      // ポートフォリオ追加画面
+      path: '/PortfolioAdd',
+      name: 'PortfolioAdd',
+      component: () => import('@/views/PortfolioAddView.vue')
+    },
+    {
+      // ポートフォリオ変更画面
+      path: '/PortfolioEdit',
+      name: 'PortfolioEdit',
+      component: () => import('@/views/PortfolioEditView.vue')
     }
     /*
     {
