@@ -31,7 +31,9 @@ const onAdd = (): void => {
             <!-- 名称 -->
             <div class="row p-2">
                 <div class="col">名称</div>
-                <div class="col"><input type="text" class="form-control" placeholder="名称を入れてください" v-model="inputName" maxlength="100"></div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="名称を入れてください" v-model="inputName" maxlength="100">
+                </div>
             </div>
 
             <!-- 種別 -->

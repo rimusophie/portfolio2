@@ -16,6 +16,24 @@ const router = createRouter({
       component: () => import('@/views/JobCareerListView.vue')
     },
     {
+      // 職務経歴詳細画面
+      path: '/JobCareerDetail',
+      name: 'JobCareerDetail',
+      component: () => import('@/views/JobCareerDetailView.vue')
+    },
+    {
+      // 職務経歴追加画面
+      path: '/JobCareerAdd',
+      name: 'JobCareerAdd',
+      component: () => import('@/views/JobCareerAddView.vue')
+    },
+    {
+      // 職務経歴変更画面
+      path: '/JobCareerEdit',
+      name: 'JobCareerEdit',
+      component: () => import('@/views/JobCareerEditView.vue')
+    },
+    {
       // スキル一覧画面
       path: '/SkillList',
       name: 'SkillList',

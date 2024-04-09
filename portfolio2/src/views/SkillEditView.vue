@@ -11,10 +11,7 @@ const inputName = ref("Java");
 const inputKind = ref("1");
 
 const onUpdate = (): void => {
-    alert("aaa");
     // 成功したら詳細画面へ
-    //inputName.value = "";
-    //inputKind.value = "0";
     router.push({name: "SkillDetail", params:{id: "111"}});
 };
 </script>
@@ -29,7 +26,9 @@ const onUpdate = (): void => {
             <!-- 名称 -->
             <div class="row p-2">
                 <div class="col">名称</div>
-                <div class="col"><input type="text" class="form-control" placeholder="名称を入れてください" v-model="inputName" maxlength="100"></div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="名称を入れてください" v-model="inputName" maxlength="100">
+                </div>
             </div>
 
             <!-- 種別 -->
@@ -46,6 +45,10 @@ const onUpdate = (): void => {
 
             <div class="row p-2">
                 <div class="col"><button class="btn btn-secondary">更新</button></div>
+            </div>
+
+            <div class="row p-2">
+                <div class="col"><RouterLink v-bind:to="{name: 'SkillDetail', params: {id: '111'}}">詳細へ戻る</RouterLink></div>
             </div>
         </form>
     </div>
