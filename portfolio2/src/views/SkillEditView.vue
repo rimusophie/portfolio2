@@ -1,33 +1,31 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { RouterLink } from 'vue-router';
+import { useRouter } from "vue-router";
+
+const router = useRouter();
 
 // 名称
-const inputName = ref("");
+const inputName = ref("Java");
 
 // 種別
-const inputKind = ref("0");
+const inputKind = ref("1");
 
-const onBackList = (): void => {
-    
-};
-const onAdd = (): void => {
-    if(!confirm("登録します。よろしいでしょうか？")) {
-        return;
-    }
-    // 成功したら入力値を初期化
-    inputName.value = "";
-    inputKind.value = "0";
+const onUpdate = (): void => {
+    alert("aaa");
+    // 成功したら詳細画面へ
+    //inputName.value = "";
+    //inputKind.value = "0";
+    router.push({name: "SkillDetail", params:{id: "111"}});
 };
 </script>
 
 <template>
     <div class="container">
         <div class="row bg-info text-white p-2 mb-2">
-            スキル登録
+            スキル変更
         </div>
 
-        <form v-on:submit.prevent="onAdd">
+        <form v-on:submit.prevent="onUpdate">
             <!-- 名称 -->
             <div class="row p-2">
                 <div class="col">名称</div>
@@ -47,11 +45,7 @@ const onAdd = (): void => {
             </div>
 
             <div class="row p-2">
-                <div class="col"><button type="submit" class="btn btn-secondary">登録</button></div>
-            </div>
-
-            <div class="row p-2">
-                <div class="col"><RouterLink v-bind:to="{name: 'SkillList'}">一覧へ戻る</RouterLink></div>
+                <div class="col"><button class="btn btn-secondary">更新</button></div>
             </div>
         </form>
     </div>
