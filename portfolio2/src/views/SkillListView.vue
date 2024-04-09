@@ -26,14 +26,14 @@ import { RouterLink } from 'vue-router';
                 <tbody>
                     <tr>
                         <td>
-                            <RouterLink v-bind:to="{name: 'SkillDetail', params: {id: 111}}">Java</RouterLink>
+                            <RouterLink v-bind:to="{name: 'SkillDetail', params: {id: '111'}}">Java</RouterLink>
                         </td>
                         <td>PG</td>
                         <td>4年3ヶ月</td>
                     </tr>
                     <tr>
                         <td>
-                            <RouterLink v-bind:to="{name: 'SkillDetail', params: {id: 222}}">SQLServer</RouterLink>
+                            <RouterLink v-bind:to="{name: 'SkillDetail', params: {id: '222'}}">SQLServer</RouterLink>
                         </td>
                         <td>DB</td>
                         <td>3ヶ月</td>

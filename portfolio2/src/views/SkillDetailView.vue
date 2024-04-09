@@ -1,4 +1,18 @@
 <script setup lang="ts">
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+const onEdit = (): void => {
+    alert("onEdit");
+    // 編集画面へ
+    router.push({name: "SkillEdit"});
+};
+const onDelete = (): void => {
+    // 成功したら一覧画面へ
+    alert("onDelete");
+    router.push({name: "SkillList"});
+};
 </script>
 
 <template>
@@ -26,8 +40,8 @@
         </div>
 
         <div class="row p-2">
-            <div class="col"><button>更新</button></div>
-            <div class="col"><button>削除</button></div>
+            <div class="col"><button class="btn btn-secondary" v-on:click="onEdit">変更</button></div>
+            <div class="col"><button class="btn btn-secondary" v-on:click="onDelete">削除</button></div>
         </div>
     </div>
     

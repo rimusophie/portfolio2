@@ -34,6 +34,12 @@ const router = createRouter({
       component: () => import('@/views/SkillAddView.vue')
     },
     {
+      // スキル変更画面
+      path: '/SkillEdit/:id',
+      name: 'SkillEdit',
+      component: () => import('@/views/SkillEditView.vue')
+    },
+    {
       // ポートフォリオ一覧画面
       path: '/PortfolioList',
       name: 'PortfolioList',
